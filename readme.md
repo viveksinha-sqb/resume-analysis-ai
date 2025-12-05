@@ -1,15 +1,85 @@
-project is built with FastAPI, you can follow these steps to run it:
+# 🚀 Resume Analysis AI
 
-Make sure you have Python installed on your system. You can check by running python --version in your terminal.
-Create a virtual environment to isolate the project dependencies. You can do this by running the following command in your terminal:
+A FastAPI-based service for processing and analyzing resumes using modern AI techniques.
+
+---
+
+## 📦 Requirements
+
+* Python 3.8+
+* Virtual environment (recommended)
+* pip package manager
+
+---
+
+## 🛠️ Setup & Installation
+
+Follow the steps below to run the project locally.
+
+### 1️⃣ **Check Python Installation**
+
+```bash
+python --version
+```
+
+---
+
+### 2️⃣ **Create Virtual Environment**
+
+```bash
 python -m venv venv
-Activate the virtual environment. The command to activate the virtual environment depends on your operating system:
-On Windows:
-venv\Scripts\activate
-On macOS and Linux:
+```
+
+---
+
+### 3️⃣ **Activate Virtual Environment**
+
+#### macOS / Linux:
+
+```bash
 source venv/bin/activate
-Install the project dependencies by running the following command in your terminal:
+```
+
+
+### 4️⃣ **Install Dependencies**
+
+```bash
 pip install -r requirements.txt
-Once the dependencies are installed, you can run the FastAPI application. The specific command to run the application depends on the structure of your project. If you have a main.py or app.py file, you can run the following command:
+```
+
+---
+
+## ▶️ Run the FastAPI Application
+
+If your entry file is `main.py` and your FastAPI instance is named `app`, run:
+
+```bash
 uvicorn main:app --reload
+```
+
+This will start a development server with auto-reload.
+
+---
+
+## 🌐 Access the API
+
+Once running, visit:
+
+* **API Root:** [http://localhost:8000](http://localhost:8000)
+* **Interactive Swagger Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
+* **ReDoc Documentation:** [http://localhost:8000/redoc](http://localhost:8000/redoc)
+
+---
+
+## 📁 Project Structure (example)
+
+```
+resume-analysis-ai/
+│
+├── main.py
+├── requirements.txt
+├── venv/
+└── README.md
+```
+
 
